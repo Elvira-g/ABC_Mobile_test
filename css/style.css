@@ -1,0 +1,679 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/roboto/Roboto-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/roboto/Roboto-Light.ttf);
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Bad_script;
+    src: url(../fonts/bad_script/BadScript-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+body, h1, h2, h3, h4, h5, p, a, img, form, input, ul, li  {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #272727;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
+/* header, .main-grey-block, .main-btn-block, .rune-block {
+    padding: 0 32px;
+} */
+
+h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #F6C866;
+}
+
+h2 b {
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+h4 {
+    font-family: Bad_script;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+h5 {
+    font-family: Bad_script;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+header {
+    position: relative;
+}
+
+header h1, h2 {
+    display: block;
+    width: 100%;
+}
+
+.header-img {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 0;
+}
+
+.top-text-block {
+    padding-top: 21px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+}
+
+.header-block {
+    margin-top: 7px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header-block-img {
+    display: block;
+    margin-top: 43px;
+    margin-bottom: 27px;
+}
+
+.btn-block {
+    margin: 0 auto;
+    margin-top: 23px;
+    width: 47.7%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    background: linear-gradient(90deg, rgba(246, 200, 102, 0.9) -6.2%, rgba(254, 173, 53, 0.9) 100%);
+    border-radius: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.btn:before {
+    content: '';
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0.5;
+    filter: blur;
+    background: linear-gradient(to left, transparent 0%, #fff 40%, #fff 60%, transparent 100%);
+    transform: translate(-100%, -25%) rotate(10deg);
+    animation: blick 4s infinite;
+}
+
+.main-grey-block {
+    position: relative;
+    margin: 0 0 40px 0;
+    padding: 48px 23px 35px 22px;
+    margin-top: 68px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.main-block-img {
+    width: 87px;
+    position: absolute;
+    top: -48px;
+    left: 35.5%;
+}
+
+.main-img-block {
+    position: relative;
+    width: 100%;
+    min-height: 331px;
+}
+
+.main-img-background {
+    width: 100%;
+    min-height: 331px;
+    position: absolute;
+    z-index: 0;
+    background-image: url(../img/image_7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.4);
+}
+
+.main-img-text-block {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    padding: 107px 55px 75px 55px;
+    box-sizing: border-box;
+}
+
+.test-block {
+    width: 100%;
+}
+
+.question-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.question {
+    width: 100%;
+    display: none;
+}
+
+.question-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.question h2 {
+    text-transform: uppercase;
+    width: 80%;
+}
+
+.article-block {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 36px;
+}
+
+.answer-article-block {
+    background: #FFFFFF;
+    min-height: 84px;
+    border-radius: 5px;
+    margin: 0 30px 16px 31px;
+    position: relative;
+}
+
+.answer-article-block::after {
+    content: ''; 
+    position: absolute;
+    right: 22px;
+    top: 99%;
+    border: 10px solid transparent;
+    border-top: 10px solid #ffffff;
+}
+
+.answer-article-block h5 {
+    color: #202024;
+    padding-top: 23px;
+    padding-bottom: 13px;
+    box-sizing: border-box;
+}
+
+.article {
+    display: block;
+    width: 235px;
+    margin: 0 auto;
+    margin-bottom: 23px;
+    font-style: italic;
+}
+
+.final-article-block {
+    background: #FFFFFF;
+    min-height: 84px;
+    border-radius: 5px;
+    margin: 0 30px 16px 31px;
+    position: relative;
+}
+
+.final-article {
+    display: block;
+    width: 235px;
+    margin: 0 auto;
+    padding-top: 11px;
+    padding-bottom: 20px;
+    margin-bottom: 23px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #202024;
+    box-sizing: border-box;
+}
+
+.final-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.final-btn-block {
+    margin: 0 auto;
+    margin-top: 23px;
+    width: 59.7%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.final-btn {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background: linear-gradient(90deg, rgba(76, 217, 100, 0.9) -6.2%, rgba(50, 185, 73, 0.9) 100%);
+    border-radius: 50px;
+    width: 238px;
+    height: 48px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.final-btn:before {
+    content: '';
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0.5;
+    filter: blur;
+    background: linear-gradient(to left, transparent 0%, #fff 40%, #fff 60%, transparent 100%);
+    transform: translate(-100%, -25%) rotate(10deg);
+    animation: blick 4s infinite;
+}
+
+.final h2 {
+    width: 100%;
+}
+
+.final .main-grey-block {
+    padding: 64px 50px 38px 50px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form-item {
+    background: linear-gradient(90deg, rgba(228, 228, 228, 0.9) -6.2%, rgba(203, 203, 203, 0.9) 100%);
+    border-radius: 50px;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #202024;
+}
+
+.question-pag-block {
+    display: flex;
+    justify-content: center;
+}
+
+.active {
+    display: block;
+}
+
+.main-btn-block {
+    margin-top: 53px;
+}
+
+.main-btn-block h2 {
+    margin-bottom: 27px;
+}
+
+.rune-block {
+    position: relative;
+    margin-top: 32px;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.rune-text-block {
+    margin: 0 auto;
+    margin-top: 61px;
+    width: 77%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.rune-text-block h4 {
+    margin-bottom: 33px;
+}
+
+.rune-text-img {
+    margin-bottom: 37px;
+}
+
+.rune-img {
+    position: absolute;
+    filter: brightness(0.4);
+}
+
+.rune-img-1 {
+    width: 83px;
+    top: -8px;
+    right: -25px;
+}
+
+.rune-img-2 {
+    width: 51px;
+    top: 225px;
+    left: -15px;
+}
+
+footer {
+    margin-top: 44px;
+    margin-bottom: 30px;
+}
+
+.footer-block {
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.footer-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #272727 75%)
+}
+
+.show-text {
+    height: auto;
+}
+
+@keyframes blick {
+    0% {
+      transform: translate(-100%, -25%) rotate(10deg);
+    }
+    20% {
+      transform: translate(100%, -25%) rotate(10deg);
+    }
+    100% {
+      transform: translate(100%, -25%) rotate(10deg);
+    }
+}
+
+@media (min-width: 667px) {
+
+    h1 {
+        font-size: 25px;
+        line-height: 29px;
+    }
+    
+    h2 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    
+    h3 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    
+    h4 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    h5 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    
+    p {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .container {
+        width: 510px;
+        margin: 0 auto;
+    }
+
+    .main-grey-block, .main-btn-block, .rune-block {
+        margin: 0 auto;
+    }
+
+    header {
+        background-image: url(../img/blik2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .top-text-block {
+        padding-top: 36px;
+        padding-bottom: 19px;
+    }
+
+    .header-block {
+        margin-top: 11px;
+    }
+    
+    .header-block-img {
+        margin-top: 64px;
+        margin-bottom: 23px;
+    }
+    
+    .btn-block {
+        margin-top: 45px;
+        width: 310px;
+    }
+    
+    .btn {
+        height: 69px;
+        width: 310px;
+        margin-bottom: 34px;
+        font-size: 20px;
+        line-height: 69px;
+    }
+
+    .final-btn {
+        width: 310px;
+        height: 79px;
+        font-size: 20px;
+        line-height: 79px;
+    }
+
+    .final-text {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    form {
+        width: 310px;
+    }
+
+    .form-item {
+        height: 69px;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .header-block-img {
+        width: 380px;
+    }
+
+    .main-grey-block {
+        margin: 0 auto;
+        padding: 128px 45px 83px 32px;
+        margin-top: 120px;
+        margin-bottom: 69px;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+
+    .main-block-img {
+        width: 151px;
+        top: -75px;
+    }
+
+    .main-img-block {
+        min-height: 606px;
+        margin-bottom: 133px;
+    }
+    
+    .main-img-background {
+        width: 100%;
+        min-height: 606px;
+    }
+
+    .main-img-text-block {
+        width: 380px;
+        padding: 0;
+    }
+
+    .answer-article-block {
+        margin-top: 48px;
+    }
+
+    .article {
+        width: 100%;
+    }
+
+    .final-article {
+        width: 90%;
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .rune-block {
+        width: 100%;
+        margin-top: 0;
+        min-height: 550px;
+    }
+    
+    .rune-text-block {
+        margin-top: 105px;
+        width: 21%;
+    }
+    
+    .rune-text-block h4 {
+        margin-bottom: 80px;
+    }
+    
+    .rune-text-img {
+        margin-bottom: 80px;
+        height: 17px;
+        width: auto;
+    }
+    
+    .rune-img-1 {
+        width: 296px;
+        top: -8px;
+        right: 1%;
+    }
+    
+    .rune-img-2 {
+        width: 160px;
+        top: 323px;
+        left: 1%;
+    }
+}
